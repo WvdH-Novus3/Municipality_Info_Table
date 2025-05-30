@@ -1,0 +1,12 @@
+name: municipality_info_table
+title: Municipality Info Table
+username: wihan.vanderheever
+account: wihan.vanderheever
+server: connectqa.novus3.co.za
+hostUrl: https://connectqa.novus3.co.za/__api__
+appId: 124
+bundleId: 552
+url: https://connectqa.novus3.co.za/content/2ca65f2b-4f68-4e7f-b6d7-a64b569351d9/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

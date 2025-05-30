@@ -1,0 +1,30 @@
+default:
+    username: "wihanvdh@novus3.co.za"
+    name: "Wihan"
+    surname: "van der Heever"
+    role: "WvdH"
+    MUNbdName: "MUNICIPALITY_INFO"
+    MUNdbHost: "localhost"
+    MUNdbPort: "5432"
+    dbUser: !expr Sys.getenv("POSTGRES_USERNAME_LOCALHOST")
+    dbPassword: !expr Sys.getenv("POSTGRES_PASSWORD_LOCALHOST")
+    # User Roles and Login info for testing
+    userRole: "System Admin"
+    userUnit: "WC044 George"
+    appDeploymentStatus: local
+
+
+QA:
+  username: "qa_user@novus3.co.za"
+  name: "Quality"
+  surname: "Assurance"
+  role: "QA_System_Admin"
+  MUNdbName: "MUNICIPALITY_INFO"
+  MUNdbHost: "172.16.112.20"
+  MUNdbPort: "5432"
+  dbUser: !expr Sys.getenv("NOVUS3_DB_USERNAME")
+  dbPassword: !expr Sys.getenv("NOVUS3_DB_PASSWORD")
+  userRole: "System Admin QA"
+  userUnit: "Testing and Monitoring"
+  appDeploymentStatus: qa
+
